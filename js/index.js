@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
         bttn.innerText = 'Read Book'
 
         bttn.addEventListener('click', () => {
-            
+            event.preventDefault()
             book.users.push({"id":1, "username":"pouros"})
 
             fetch('http://localhost:3000/books/'+book.id, {
